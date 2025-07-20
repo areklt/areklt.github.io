@@ -95,3 +95,7 @@ header{
     background-color: #1b1b1b;
     border-radius: 10px;
 }
+
+#guess-number-game{
+    margin-top: 5%;
+}
