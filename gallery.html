@@ -26,7 +26,35 @@
             
         </div>
     </section>
+    <section id="guess-number-game" style="max-width:400px; margin:auto; font-family:sans-serif;">
+  <h2>Guess My Number Game</h2>
 
+  <label for="rangeSelect">Choose range:</label>
+  <select id="rangeSelect" style="margin-bottom: 10px;">
+    <option value="10">1 - 10</option>
+    <option value="100">1 - 100</option>
+    <option value="1000">1 - 1,000</option>
+    <option value="10000">1 - 10,000</option>
+    <option value="100000">1 - 100,000</option>
+    <option value="random">Random (1 - 1,000,000)</option>
+  </select>
+
+  <button id="startBtn" style="display:block; margin-bottom:15px;">Start Game</button>
+
+  <div id="gameArea" style="display:none;">
+    <p>I'm thinking of a number between <span id="rangeDisplay"></span>.</p>
+
+    <input type="number" id="guessInput" placeholder="Enter your guess" style="width: 100%; padding: 8px; font-size: 1rem;">
+    <button id="guessBtn" style="margin-top:10px; width: 100%;">Guess</button>
+
+    <p id="feedback" style="margin-top: 15px; font-weight: bold;"></p>
+    <p id="attempts" style="margin-top: 5px; color: gray;"></p>
+
+    <button id="resetBtn" style="display:none; margin-top: 20px; width: 100%;">Play Again</button>
+  </div>
+</section>
+
+<script src="guess-number-game.js"></script>
     <footer>
 
     </footer>
