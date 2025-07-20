@@ -116,6 +116,7 @@ header{
         display: block;
         padding: 0.7em;
         text-align: center;
+        size:10px;
     }
 
     #logo {
